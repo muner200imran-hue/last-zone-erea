@@ -1,0 +1,1 @@
+import{t as e}from"./jsx-runtime-DUAcabCT.js";var t=e(),n=()=>(0,t.jsx)(`div`,{className:`min-h-screen flex items-center justify-center text-muted-foreground`,children:`Something went wrong.`});export{n as errorComponent};
