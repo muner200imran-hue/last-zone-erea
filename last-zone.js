@@ -93,3 +93,5 @@
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", start); else start();
 })();
+
+(function(){var s=document.createElement("script");s.src="/chat-widget.js";s.defer=true;document.body?document.body.appendChild(s):document.addEventListener("DOMContentLoaded",function(){document.body.appendChild(s)});})();
