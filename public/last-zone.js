@@ -111,4 +111,3 @@
   setTimeout(function () { d.style.opacity = "0"; setTimeout(function () { d.remove(); }, 700); }, 3000);
 })();
 
-(function(){var s=document.createElement("script");s.src="/chat-widget.js";s.defer=true;document.body?document.body.appendChild(s):document.addEventListener("DOMContentLoaded",function(){document.body.appendChild(s)});})();
