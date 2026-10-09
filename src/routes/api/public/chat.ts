@@ -27,7 +27,8 @@ export const Route = createFileRoute("/api/public/chat")({
         if (!parsed.success) return json({ error: "Invalid request" }, 400);
         const { conversationId, action } = parsed.data;
 
-        const { supabaseAdmin: db } = await import("@/integrations/supabase/client.server");
+        const { getChatDb } = await import("@/lib/chat-db.server");
+        const db = getChatDb();
 
         const { data: history, error: histErr } = await db
           .from("chat_messages")
