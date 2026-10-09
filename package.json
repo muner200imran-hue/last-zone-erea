@@ -8,9 +8,12 @@
     "build:dev": "vite build --mode development"
   },
   "devDependencies": {
+    "drizzle-kit": "0.x",
+    "drizzle-orm": "0.x",
+    "postgres": "^3.4.9",
     "vite": "^8.1.5"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.117.2"
+    "@supabase/supabase-js": "^2.117.3"
   }
 }
