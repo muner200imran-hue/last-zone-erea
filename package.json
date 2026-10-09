@@ -8,12 +8,23 @@
     "build:dev": "vite build --mode development"
   },
   "devDependencies": {
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
     "drizzle-kit": "0.x",
     "drizzle-orm": "0.x",
     "postgres": "^3.4.9",
+    "typescript": "^7.0.2",
     "vite": "^8.1.5"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.117.3"
+    "@ai-sdk/openai": "^4.0.91",
+    "@lovable.dev/vite-tanstack-config": "^2.26.6",
+    "@supabase/supabase-js": "^2.117.3",
+    "@tanstack/react-router": "^1.170.41",
+    "@tanstack/react-start": "^1.168.60",
+    "ai": "^7.0.137",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "zod": "^4.6.5"
   }
 }
