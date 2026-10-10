@@ -6,3 +6,5 @@
 - [x] SEO comparison pages: batch 1 (10 pages in /guides, added to sitemap).
 - [x] SEO comparison pages: remaining 40 + charts, reviews and "which to choose" added to all 50.
 - [x] Translate all pages into Portuguese (/pt), Argentine Spanish (/es), Arabic (/ar; existing ar- guides kept); added to sitemap with hreflang.
+- [x] Removed chat bubble; connected Google Search Console; fixed home canonical and old site address on all pages.
+- [x] 6 high-demand English Lovable pages (pricing, what is, free plan, credits, reset, promo code); sitemap resubmitted.
