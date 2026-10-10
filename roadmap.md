@@ -9,3 +9,6 @@
 - [x] Removed chat bubble; connected Google Search Console; fixed home canonical and old site address on all pages.
 - [x] 6 high-demand English Lovable pages (pricing, what is, free plan, credits, reset, promo code); sitemap resubmitted.
 - [x] Fixed logo/home 404 links; 30 new high-demand guide pages + Guides "Popular topics" hub; full canonicals; 31 site checks passed.
+- [x] Full SEO audit fixes: shorter titles/descriptions (291 pages), duplicate titles, junk pages removed, broken icon fixed, FAQ/privacy/terms tags, honest home titles in 4 languages.
+- [ ] Expand ~179 short pages (under 300 words) with real content — in batches; AI credits are out, so written manually.
+- [ ] Reconnect Google Search Console — access currently denied; needs the user.
