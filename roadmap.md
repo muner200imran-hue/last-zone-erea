@@ -8,3 +8,4 @@
 - [x] Translate all pages into Portuguese (/pt), Argentine Spanish (/es), Arabic (/ar; existing ar- guides kept); added to sitemap with hreflang.
 - [x] Removed chat bubble; connected Google Search Console; fixed home canonical and old site address on all pages.
 - [x] 6 high-demand English Lovable pages (pricing, what is, free plan, credits, reset, promo code); sitemap resubmitted.
+- [x] Fixed logo/home 404 links; 30 new high-demand guide pages + Guides "Popular topics" hub; full canonicals; 31 site checks passed.
