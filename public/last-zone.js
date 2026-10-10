@@ -97,7 +97,7 @@
 // Keep top bar fixed while scrolling (overflow hidden breaks sticky)
 (function () {
   var s = document.createElement("style");
-  s.textContent = ".overflow-x-hidden{overflow-x:clip!important}html,body{overflow-x:clip}header{position:sticky!important;top:0!important;z-index:50!important}";
+  s.textContent = ".overflow-x-hidden{overflow-x:clip!important}html,body{overflow-x:clip}header:not(main header):not(article header):not(section header){position:sticky!important;top:0!important;z-index:50!important}main header,article header,section header{position:static!important}";
   (document.head || document.documentElement).appendChild(s);
 })();
 
