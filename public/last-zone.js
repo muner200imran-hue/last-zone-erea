@@ -97,7 +97,8 @@
 // Keep top bar fixed while scrolling (overflow hidden breaks sticky)
 (function () {
   var s = document.createElement("style");
-  s.textContent = ".overflow-x-hidden{overflow-x:clip!important}html,body{overflow-x:clip}header:not(main header):not(article header):not(section header){position:sticky!important;top:0!important;z-index:50!important;background:rgba(7,7,13,.97)!important;-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px)}main header,article header,section header{position:static!important}";
+  // Blur effects (backdrop-filter) leave smeared/stuck text while scrolling in many real browsers, so they are disabled site-wide.
+  s.textContent = ".overflow-x-hidden{overflow-x:clip!important}html,body{overflow-x:clip}html{scroll-behavior:auto!important}*,*::before,*::after{-webkit-backdrop-filter:none!important;backdrop-filter:none!important}header:not(main header):not(article header):not(section header){position:sticky!important;top:0!important;z-index:50!important;background:#07070d!important;transform:translateZ(0)}main header,article header,section header{position:static!important;transform:none}.glass-card{background-color:#0c0c14!important}.fixed.inset-0.pointer-events-none{transform:translateZ(0);contain:strict}";
   (document.head || document.documentElement).appendChild(s);
 })();
 
