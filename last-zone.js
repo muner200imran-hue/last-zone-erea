@@ -10,7 +10,7 @@
   'header img[src*="lovable-zone-logo"],nav img[src*="lovable-zone-logo"]{width:40px!important;height:40px!important;}'+
   'a:has(>img[src*="lovable-zone-logo"]){gap:12px!important;align-items:center!important;}'+
   'a:has(>img[src*="lovable-zone-logo"]) span{font-weight:800!important;letter-spacing:.14em!important;font-size:1.15rem!important;line-height:1!important;}'+
-  'div.fixed.bottom-5.right-5:has(button[aria-label="Help and support"]){display:none!important;}';
+  'div.fixed.bottom-5.right-5{display:none!important;}';
   (document.head||document.documentElement).appendChild(st);
   function hide(el) { if (el && el.style.display !== "none") el.style.setProperty("display", "none", "important"); }
 
