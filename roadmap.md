@@ -12,3 +12,6 @@
 - [x] Full SEO audit fixes: shorter titles/descriptions (291 pages), duplicate titles, junk pages removed, broken icon fixed, FAQ/privacy/terms tags, honest home titles in 4 languages.
 - [ ] Expand ~179 short pages (under 300 words) with real content — in batches; AI credits are out, so written manually.
 - [ ] Reconnect Google Search Console — access currently denied; needs the user.
+- [x] Old Google addresses now 301 to the closest page; extension-less links go to their .html page; unknown links return a real 404.
+- [ ] Strengthen pages ranking 2–15 using Search Console query data — blocked: this account has no access to the Search Console connection.
+- [ ] New pages for real Lovable user questions (step 3), in batches.
