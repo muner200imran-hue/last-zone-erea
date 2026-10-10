@@ -14,4 +14,5 @@
 - [ ] Reconnect Google Search Console — access currently denied; needs the user.
 - [x] Old Google addresses now 301 to the closest page; extension-less links go to their .html page; unknown links return a real 404.
 - [ ] Strengthen pages ranking 2–15 using Search Console query data — blocked: this account has no access to the Search Console connection.
-- [ ] New pages for real Lovable user questions (step 3), in batches.
+- [x] Step 3 batch 1: 11 Lovable how-to pages (domain, publish, GitHub, undo, blank preview, build errors, login, Stripe, Cloud, SEO, Plan mode) + Guides hub section + sitemap.
+- [ ] Step 3 next batches: more real Lovable user questions.
