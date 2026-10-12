@@ -15,6 +15,8 @@ const OLD_LINKS: Record<string, string> = {
   "/my-license": "/",
   "/reseller": "/",
   "/checkout": "/products.html",
+  "/guides/lovable-credits-explained.html": "/guides/how-lovable-credits-work.html",
+  "/guides/lovable-credits-explained": "/guides/how-lovable-credits-work.html",
   "/lovable-free-year": "/guides/is-lovable-free.html",
   "/lovable-pro-android-majani": "/ar/lovable-pro.html",
   "/lovable-pro-free": "/lovable-pro-free.html",
