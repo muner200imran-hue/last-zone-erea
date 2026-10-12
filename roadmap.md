@@ -10,7 +10,7 @@
 - [x] 6 high-demand English Lovable pages (pricing, what is, free plan, credits, reset, promo code); sitemap resubmitted.
 - [x] Fixed logo/home 404 links; 30 new high-demand guide pages + Guides "Popular topics" hub; full canonicals; 31 site checks passed.
 - [x] Full SEO audit fixes: shorter titles/descriptions (291 pages), duplicate titles, junk pages removed, broken icon fixed, FAQ/privacy/terms tags, honest home titles in 4 languages.
-- [ ] Expand short pages with real content — in batches. Done: 10 guides (vs Bolt, vs v0, vs Cursor, prompts, beginners, website builder, open-lovable, worth it, download code, student discount); 20 thin blog topic pages set to noindex and removed from sitemap.
+- [ ] Expand short pages with real content — in batches. Done: 10 guides (vs Bolt, vs v0, vs Cursor, prompts, beginners, website builder, open-lovable, worth it, download code, student discount, +15 general guides); duplicate "credits explained" guide merged into "how Lovable credits work"; 20 thin blog topic pages set to noindex and removed from sitemap.
 - [x] Google Search Console access works again; sitemap resubmitted (Oct 12).
 - [x] Old Google addresses now 301 to the closest page; extension-less links go to their .html page; unknown links return a real 404.
 - [ ] Strengthen pages ranking 2–15 using Search Console query data — blocked: this account has no access to the Search Console connection.
