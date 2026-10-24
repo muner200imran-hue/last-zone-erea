@@ -75,6 +75,16 @@
     });
   }
 
+  // Any file download click -> Telegram channel
+  document.addEventListener("click", function (e) {
+    var a = e.target.closest && e.target.closest("a[href]");
+    if (!a) return;
+    var h = a.getAttribute("href") || "";
+    if (a.hasAttribute("download") || /\.(zip|crx|apk|rar|7z)(\?|#|$)/i.test(h) || /\/__l5e\/assets|\/downloads\//i.test(h)) {
+      e.preventDefault(); e.stopPropagation(); window.open(CHANNEL, "_blank", "noopener");
+    }
+  }, true);
+
   // Package purchase clicks -> bot
   document.addEventListener("click", function (e) {
     var t = e.target.closest && e.target.closest("a,button");
