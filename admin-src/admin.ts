@@ -10,7 +10,9 @@ const supabase = createClient(
 );
 const lovableAuth = createLovableAuth();
 
-type Page = { path: string; title: string };
+type Page = { path: string; title: string; lang: string };
+const LANGS: [string, string][] = [["en", "English"], ["ar", "العربية"], ["es", "Español"], ["pt", "Português"]];
+let curLang = "en";
 const $ = (id: string) => document.getElementById(id)!;
 const esc = (s: string) =>
   s.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]!);
@@ -46,15 +48,18 @@ async function render() {
   const saved = new Map((rows ?? []).map((r) => [r.path as string, r.title as string]));
 
   app.innerHTML = `
-    <div class="bar"><b>عناوين الصفحات (${pages.length})</b>
+    <div class="bar"><b>عناوين الصفحات</b>
       <input id="q" placeholder="ابحث..." />
       <span class="who">${esc(user.email ?? "")}</span><button id="out" class="ghost">خروج</button></div>
     <p class="note">بعد ما تحفظ العناوين، قول للمساعد "طبّق العناوين" وبعدها اضغط Publish عشان تظهر لـ Google.</p>
+    <div class="tabs">${LANGS.map(([k, n]) => `<button class="tab${k === curLang ? "" : " ghost"}" data-l="${k}">${n} (${pages.filter((p) => p.lang === k).length})</button>`).join("")}</div>
     <div id="list"></div>`;
+  app.querySelectorAll<HTMLButtonElement>(".tab").forEach((b) => (b.onclick = () => { curLang = b.dataset.l!; render(); }));
   $("out").onclick = async () => { await supabase.auth.signOut(); render(); };
 
   const list = $("list");
   list.innerHTML = pages.map((p, i) => {
+    if (p.lang !== curLang) return "";
     const cur = saved.get(p.path);
     return `<div class="row" data-i="${i}" data-s="${esc((p.path + " " + p.title + " " + (cur ?? "")).toLowerCase())}">
       <a href="${esc(p.path)}" target="_blank">${esc(p.path)}</a>
