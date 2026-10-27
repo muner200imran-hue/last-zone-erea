@@ -4,6 +4,8 @@ import { STATIC_PAGES } from "@/lib/static-pages";
 // Old addresses (from the previous version of the site) that Google still shows,
 // pointed at the closest page that exists today.
 const OLD_LINKS: Record<string, string> = {
+  "/admin": "/admin/index.html",
+  "/admin/": "/admin/index.html",
   "/guide": "/guides.html",
   "/lovable-unlimited-credits-extension": "/lovable-unlimited-credits.html",
   "/how-to-get-unlimited-lovable-credits": "/lovable-unlimited-credits.html",
