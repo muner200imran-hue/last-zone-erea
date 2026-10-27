@@ -17,7 +17,7 @@ const esc = (s: string) =>
 
 async function signIn() {
   const r = await lovableAuth.signInWithOAuth("google", {
-    redirect_uri: window.location.origin + "/admin/",
+    redirect_uri: window.location.origin + "/admin/index.html",
     extraParams: { prompt: "select_account" },
   });
   if (r.error) return alert("فشل تسجيل الدخول: " + r.error.message);
