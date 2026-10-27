@@ -15,6 +15,13 @@
       "when": 1793061901409,
       "tag": "0001_admin_page_titles",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1793061915825,
+      "tag": "0002_first_user_is_admin",
+      "breakpoints": true
     }
   ]
 }
