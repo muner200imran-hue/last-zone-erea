@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow" />
+<title>LAST ZONE — لوحة الإدارة</title>
+<style>
+  :root { --bg:#0b0d12; --card:#151922; --line:#262c3a; --fg:#e8ecf3; --mut:#8b94a7; --acc:#f5b301; --warn:#ff7a59; }
+  * { box-sizing:border-box }
+  body { margin:0; background:var(--bg); color:var(--fg); font:15px/1.5 system-ui, sans-serif }
+  #app { max-width:1000px; margin:0 auto; padding:16px }
+  .box { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:28px; text-align:center; margin-top:60px }
+  button { background:var(--acc); color:var(--bg); border:0; border-radius:8px; padding:8px 14px; font-weight:700; cursor:pointer }
+  button.ghost { background:transparent; color:var(--fg); border:1px solid var(--line) }
+  .bar { display:flex; gap:10px; align-items:center; flex-wrap:wrap; position:sticky; top:0; background:var(--bg); padding:10px 0; z-index:2 }
+  .bar input { flex:1; min-width:160px }
+  .who { color:var(--mut); font-size:13px }
+  .note { color:var(--mut); font-size:13px }
+  input { background:var(--bg); color:var(--fg); border:1px solid var(--line); border-radius:8px; padding:8px 10px; font:inherit; width:100% }
+  .row { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:12px; margin:10px 0; display:flex; flex-wrap:wrap; gap:8px; align-items:center }
+  .row a { color:var(--acc); direction:ltr; font-size:13px; width:100% }
+  .orig { color:var(--mut); font-size:13px; width:100%; direction:ltr; text-align:left }
+  .row input { direction:ltr }
+  .len { color:var(--mut); font-size:12px } .len.warn { color:var(--warn) }
+  .st { font-size:13px; color:var(--acc) }
+</style>
+</head>
+<body>
+<div id="app"><div class="box">جاري التحميل...</div></div>
+<script type="module" src="/admin/admin.js"></script>
+</body>
+</html>
